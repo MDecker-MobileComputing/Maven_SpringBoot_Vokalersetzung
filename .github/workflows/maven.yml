@@ -17,10 +17,12 @@ jobs:
         java-version: '23'
         distribution: 'temurin'
         cache: maven
-    - name: Maven-Installation checken
-      run: ./mvnw --version
+    - name: Execution-Bit für Maven-Wrapper setzen
+       run: chmod u+x mvnw
+    - name: Maven-Installation überprüfen
+       run: ./mvnw --version       
     - name: FatJar-Datei mit Maven bauen
-      run: ./mvnw --batch-mode clean package
+       run: ./mvnw --batch-mode clean package
     - name: FatJar-Datei veröffentlichen
       uses: actions/upload-artifact@v4
       with:
