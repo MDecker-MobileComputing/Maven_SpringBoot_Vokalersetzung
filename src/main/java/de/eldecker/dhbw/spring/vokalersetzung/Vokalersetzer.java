@@ -1,9 +1,12 @@
 package de.eldecker.dhbw.spring.vokalersetzung;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 
-@Component
+/**
+ * Bean mit Geschäftslogik, nämlich für die eigentliche Vokalersetzung. 
+ */
+@Service
 public class Vokalersetzer {
 
     /** Regulärer Ausdruck für Vokale als Großbuchstaben. */

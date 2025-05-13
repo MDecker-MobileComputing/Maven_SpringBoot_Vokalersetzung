@@ -4,6 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
+/**
+ * Einstiegspunkt für Ausführung der Anwendung.
+ */
 @SpringBootApplication
 public class VokalersetzungApplication {
 
